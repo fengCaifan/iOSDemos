@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailVideoController" customModule="FordShow" customModuleProvider="target">
+            <connections>
+                <outlet property="backGroundImage" destination="haQ-j9-UMz" id="MHr-0F-or5"/>
+                <outlet property="fsPageView" destination="qGh-Fi-vxY" id="e5R-1z-sfL"/>
+                <outlet property="leftLayoutConstraint" destination="dgD-kA-Jc9" id="5c0-0O-UNf"/>
+                <outlet property="nameLabel" destination="jZh-RN-a9R" id="KBb-Us-hgB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="haQ-j9-UMz">
+                    <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGh-Fi-vxY" customClass="FSPagerView" customModule="FordShow" customModuleProvider="target">
+                    <rect key="frame" x="100" y="0.0" width="1166" height="1024"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="福特.猛禽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZh-RN-a9R">
+                    <rect key="frame" x="614" y="785.5" width="138" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qGh-Fi-vxY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3B9-sw-UmJ"/>
+                <constraint firstItem="qGh-Fi-vxY" firstAttribute="centerX" secondItem="haQ-j9-UMz" secondAttribute="centerX" id="A7h-xC-rSq"/>
+                <constraint firstItem="haQ-j9-UMz" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="I1K-Ow-xSP"/>
+                <constraint firstItem="haQ-j9-UMz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IG3-SN-2DI"/>
+                <constraint firstItem="haQ-j9-UMz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MmY-Rp-ygL"/>
+                <constraint firstItem="haQ-j9-UMz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="TBb-L7-aVm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qGh-Fi-vxY" secondAttribute="bottom" id="TPp-rB-TkJ"/>
+                <constraint firstItem="qGh-Fi-vxY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="dgD-kA-Jc9"/>
+                <constraint firstItem="jZh-RN-a9R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n7k-zc-eh1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jZh-RN-a9R" secondAttribute="bottom" constant="200" id="tPt-NS-DgF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="14.934114202049779" y="31.640624999999996"/>
+        </view>
+    </objects>
+</document>

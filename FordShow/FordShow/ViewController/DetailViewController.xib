@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="FordShow" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImageView" destination="HDd-GB-n7o" id="WeC-7t-mtS"/>
+                <outlet property="leftConstraint" destination="Mby-YQ-XP7" id="wYl-os-KCC"/>
+                <outlet property="pagerView" destination="G7B-zR-2Qu" id="x3H-09-kPY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HDd-GB-n7o">
+                    <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7B-zR-2Qu" customClass="FSPagerView" customModule="FordShow" customModuleProvider="target">
+                    <rect key="frame" x="100" y="0.0" width="1166" height="1024"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="福特-猛禽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZo-wy-d1W">
+                    <rect key="frame" x="611" y="785" width="144" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HDd-GB-n7o" secondAttribute="trailing" id="2uk-kl-oyk"/>
+                <constraint firstAttribute="bottom" secondItem="HDd-GB-n7o" secondAttribute="bottom" id="3Kf-nr-SM9"/>
+                <constraint firstItem="fZo-wy-d1W" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KIr-kd-uxB"/>
+                <constraint firstItem="G7B-zR-2Qu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="Mby-YQ-XP7"/>
+                <constraint firstItem="HDd-GB-n7o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aCi-jL-yKR"/>
+                <constraint firstItem="HDd-GB-n7o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="efO-hk-9V9"/>
+                <constraint firstItem="G7B-zR-2Qu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ghB-sX-NB5"/>
+                <constraint firstItem="G7B-zR-2Qu" firstAttribute="centerX" secondItem="HDd-GB-n7o" secondAttribute="centerX" id="opo-3s-x6n"/>
+                <constraint firstAttribute="bottom" secondItem="G7B-zR-2Qu" secondAttribute="bottom" id="osO-Hs-A2g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fZo-wy-d1W" secondAttribute="bottom" constant="200" id="qVn-Wd-PQv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
